@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.background {
+    background-color: #000000;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.background .container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background .container .center {
+    /* background-color: #e22bb4; */
+    width: 8.0rem;
+    height: 8.0rem;
+    transform-style: preserve-3d;
+    animation: centro 5s linear infinite;
+}
+
+.center span {
+    width: 0;
+    height: 0;
+    border-left: 4.0rem solid transparent;
+    border-right: 4.0rem solid transparent;
+    border-bottom: 15.0rem solid blueviolet;
+    position: absolute;
+}
+
+.center .uno {
+    transform: translateZ(7.2rem) translateY(-1.5rem) rotateX(-74.5deg);
+}
+
+.center .dos {
+    transform: rotateZ(90deg) translateZ(7.2rem) translateX(-3.5rem) translateY(2.0rem) rotateX(-74.5deg);
+}
+
+.center .tres {
+    transform: rotateZ(180deg) translateZ(7.2rem) translateY(5.5rem) rotateX(-74.5deg);    
+}
+
+.center .cuatro {
+    transform: rotateZ(270deg) translateZ(7.2rem) translateX(3.5rem) translateY(2.0rem) rotateX(-74.5deg);
+}
+
+.center .uno_abajo {
+    transform: translateZ(-7.2rem) rotateY(180deg) translateY(-1.5rem) rotateX(-74.5deg);
+}
+
+.center .dos_abajo {
+    transform: rotateZ(90deg) translateZ(-7.2rem) rotateY(180deg) translateX(3.5rem) translateY(2.0rem) rotateX(-74.5deg);
+}
+
+.center .tres_abajo {
+    transform: rotateZ(180deg) translateZ(-7.2rem) rotateY(180deg) translateY(5.5rem) rotateX(-74.5deg);    
+}
+
+.center .cuatro_abajo {
+    transform: rotateZ(270deg) translateZ(-7.2rem) rotateY(180deg) translateX(-3.5rem) translateY(2.0rem) rotateX(-74.5deg);
+}
+
+@keyframes centro {
+    0%{
+        transform: rotateX(80deg) rotateZ(0deg);
+    }
+
+    100%{
+        transform: rotateX(80deg) rotateZ(360deg);
+    }
+}
+
+.uno {
+    animation: primero 5s linear infinite;
+}
+
+.uno_abajo {
+    animation: primero 5s linear infinite;
+    
+}
+
+@keyframes primero {
+    0% {
+        border-bottom: 15.0rem solid blueviolet;
+    }
+
+    14% {
+        border-bottom: 15.0rem solid blueviolet;        
+    }
+
+    25% {
+        border-bottom: 15.0rem solid #161616;
+    }
+
+    40% {
+        border-bottom: 15.0rem solid #161616;        
+    }
+
+    65% {
+        border-bottom: 15.0rem solid #b76aff;        
+    }
+
+    80% {
+        border-bottom: 15.0rem solid #b76aff;        
+    }
+
+    100% {
+        border-bottom: 15.0rem solid blueviolet;
+    }
+}
+
+
+.cuatro {
+    animation: segundo 5s linear infinite;
+}
+
+.cuatro_abajo {
+    animation: segundo 5s linear infinite;
+}
+
+@keyframes segundo {
+    0% {
+        border-bottom: 15.0rem solid #b76aff;
+    }
+
+    10% {
+        border-bottom: 15.0rem solid #b76aff;        
+    }
+
+    40% {
+        border-bottom: 15.0rem solid blueviolet;        
+    }
+
+    50% {
+        border-bottom: 15.0rem solid #161616;
+    }
+
+    70% {
+        border-bottom: 15.0rem solid blueviolet;        
+    }     
+
+    100% {
+        border-bottom: 15.0rem solid blueviolet;
+    }
+}
+
+
+.tres {
+    animation: tercero 5s linear infinite;
+}
+
+.tres_abajo {
+    animation: tercero 5s linear infinite;
+}
+
+@keyframes tercero {
+    0% {
+        border-bottom: 15.0rem solid blueviolet;
+    }
+
+    35% {
+        border-bottom: 15.0rem solid #b76aff;        
+    }
+
+    65% {
+        border-bottom: 15.0rem solid blueviolet;        
+    }
+
+    75% {
+        border-bottom: 15.0rem solid #161616;
+    }
+
+    80% {
+        border-bottom: 15.0rem solid blueviolet;        
+    }
+
+    100% {
+        border-bottom: 15.0rem solid blueviolet;
+    }
+}
+
+
+.dos {
+    animation: cuarto 5s linear infinite;
+}
+
+.dos_abajo {
+    animation: cuarto 5s linear infinite;
+}
+
+@keyframes cuarto {
+    0% {
+        border-bottom: 15.0rem solid blueviolet;
+    }
+
+    70% {
+        border-bottom: 15.0rem solid #b76aff;        
+    }
+
+    80% {
+        border-bottom: 15.0rem solid blueviolet;        
+    }
+
+    100% {
+        border-bottom: 15.0rem solid #161616;
+    }
+}
+
+.sombra {
+    background-color: #cd97ff;
+    width: 8.0rem;
+    height: 8.0rem;
+    transform: translateZ(-20.0rem);
+    box-shadow: 0 0 1.0rem 1.0rem #d2a2ff;
+    box-shadow: 0 0 1.0rem 1.0rem #dbb6fd;
+}
